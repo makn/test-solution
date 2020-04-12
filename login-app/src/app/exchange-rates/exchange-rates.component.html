@@ -1,0 +1,18 @@
+<app-menu></app-menu>
+<h3>Historical Data</h3>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Currency</th><th>Month 1</th><th>Month 2</th>
+      <th>Month 3</th><th>Month 4</th><th>Month 5</th><th>Month 6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let exchangeRates of exchangeRates">
+      <td>{{exchangeRates.currency}}</td><td>{{exchangeRates.monthOne}}</td>
+      <td>{{exchangeRates.monthTwo}}</td><td>{{exchangeRates.monthThree}}</td>
+      <td>{{exchangeRates.monthFour}}</td><td>{{exchangeRates.monthFive}}</td>
+      <td>{{exchangeRates.monthSix}}</td>
+    </tr>
+  </tbody>
+</table>
